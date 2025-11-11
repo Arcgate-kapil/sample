@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 import { usePathname, useRouter } from 'next/navigation';
 import { useDispatch, useSelector } from 'react-redux';
 import { routing } from '@/i18n/routing';
-import { decrement, increment, reset } from '@/lib/features/counterSlice';
+import { decrement, increment, reset } from '@/lib/features/counterReducer';
 
 function buildLocalizedPath(pathname, targetLocale) {
   const segments = pathname.split('/').filter(Boolean);
